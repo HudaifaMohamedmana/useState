@@ -1,4 +1,4 @@
-import { createElement, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import EmployeeBadge from './components/EmployeeBadge'
@@ -7,14 +7,7 @@ import Manager from './Manager'
 import ManagerBadge from './components/mangerBadge'
 
 function App() {
-  const [Employee, setEmployee] = useState({})
-
-  const [currentEmployee,setCurrentEmployee]= useState({
-    name: '',
-    position: '',
-    image: '',
-    message: ''
-  })
+  const [currentEmployee,setCurrentEmployee]= useState({})
   const changeEmployee =(Emloyee)=>{
     setCurrentEmployee(Emloyee)
   }
